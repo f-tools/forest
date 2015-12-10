@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NGListVC">
+            <connections>
+                <outlet property="idToolButton" destination="kf7-L0-qpJ" id="XQX-cV-fJf"/>
+                <outlet property="nameToolButton" destination="yPe-x7-muJ" id="1bm-tg-9Fr"/>
+                <outlet property="tableView" destination="kq8-sW-Gdo" id="Zrl-1h-mqQ"/>
+                <outlet property="threadToolButton" destination="UVE-ea-ZkA" id="HpR-Wi-95S"/>
+                <outlet property="toolbar" destination="ki2-8h-hQe" id="ibY-ax-TSg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wordToolButton" destination="XNs-7c-sW1" id="E9Q-Nb-N9d"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kq8-sW-Gdo">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ki2-8h-hQe">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="vdQ-Gr-Crr"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="c7U-wg-sdL"/>
+                        <barButtonItem title="ID" id="kf7-L0-qpJ">
+                            <connections>
+                                <action selector="idButtonAction:" destination="-1" id="3hW-44-94g"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="EDc-ml-AOV"/>
+                        <barButtonItem title="ワード" id="XNs-7c-sW1">
+                            <connections>
+                                <action selector="wordToolButtonAction:" destination="-1" id="GVv-Px-Kcj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="iZ5-FF-tsH"/>
+                        <barButtonItem title="名前" id="yPe-x7-muJ">
+                            <connections>
+                                <action selector="nameToolButtonAction:" destination="-1" id="Mrx-o0-wSd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="0wW-MB-5wU"/>
+                        <barButtonItem title="スレッド" id="UVE-ea-ZkA">
+                            <connections>
+                                <action selector="threadToolButtonAction:" destination="-1" id="jGy-rG-aF7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ocJ-Yk-1dE"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kq8-sW-Gdo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AJ6-8m-4q1"/>
+                <constraint firstItem="ki2-8h-hQe" firstAttribute="top" secondItem="kq8-sW-Gdo" secondAttribute="bottom" id="Hbu-fe-aKa"/>
+                <constraint firstAttribute="trailing" secondItem="ki2-8h-hQe" secondAttribute="trailing" id="dfR-AL-rwI"/>
+                <constraint firstItem="kq8-sW-Gdo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nl1-td-Ril"/>
+                <constraint firstAttribute="bottom" secondItem="ki2-8h-hQe" secondAttribute="bottom" id="pZf-Np-nIn"/>
+                <constraint firstAttribute="trailing" secondItem="kq8-sW-Gdo" secondAttribute="trailing" id="vE7-I8-cIg"/>
+                <constraint firstItem="ki2-8h-hQe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yA4-v5-BsR"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

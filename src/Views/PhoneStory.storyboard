@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--WAWF-->
+        <scene sceneID="cUi-kZ-frf">
+            <objects>
+                <navigationController storyboardIdentifier="phoneNavi" title="WAWF" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rS3-R9-Ivy" customClass="MyNavigationVC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LAj-Lg-8Qo" kind="relationship" relationship="rootViewController" id="ByG-a4-3Dg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="-581"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="gxP-vU-MCB">
+            <objects>
+                <viewController title="MainVC" id="LAj-Lg-8Qo" customClass="MainVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SGd-QE-LX6"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZyO-ws-Qhh"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="dZP-yb-lqA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fVe-mR-gF4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <tabBar autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="1KK-Qj-vse">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="L5R-6q-dpf"/>
+                                </constraints>
+                                <items/>
+                            </tabBar>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UT-mc-egN" userLabel="above tabbar top">
+                                <rect key="frame" x="0.0" y="518" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="test"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="3bv-2q-6XG"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="a" translatesAutoresizingMaskIntoConstraints="NO" id="vAX-XU-XDz">
+                                <rect key="frame" x="0.0" y="64" width="320" height="454"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fVe-mR-gF4" secondAttribute="trailing" id="3fJ-JN-Yrw"/>
+                            <constraint firstItem="vAX-XU-XDz" firstAttribute="leading" secondItem="dZP-yb-lqA" secondAttribute="leading" id="607-J2-YS3"/>
+                            <constraint firstItem="fVe-mR-gF4" firstAttribute="top" secondItem="SGd-QE-LX6" secondAttribute="bottom" constant="-64" id="9X5-gL-9W4"/>
+                            <constraint firstItem="1KK-Qj-vse" firstAttribute="leading" secondItem="dZP-yb-lqA" secondAttribute="leading" id="A8j-uI-Wa9"/>
+                            <constraint firstItem="ZyO-ws-Qhh" firstAttribute="top" secondItem="1KK-Qj-vse" secondAttribute="bottom" id="Cse-71-fIj"/>
+                            <constraint firstItem="fVe-mR-gF4" firstAttribute="leading" secondItem="dZP-yb-lqA" secondAttribute="leading" id="Jfd-hL-PWb"/>
+                            <constraint firstItem="5UT-mc-egN" firstAttribute="leading" secondItem="dZP-yb-lqA" secondAttribute="leading" id="Uab-Cs-ZQ8"/>
+                            <constraint firstAttribute="trailing" secondItem="1KK-Qj-vse" secondAttribute="trailing" id="Vt3-NU-f5H"/>
+                            <constraint firstAttribute="trailing" secondItem="5UT-mc-egN" secondAttribute="trailing" id="ajy-Ip-eXQ"/>
+                            <constraint firstAttribute="trailing" secondItem="vAX-XU-XDz" secondAttribute="trailing" id="gxO-IR-C6p"/>
+                            <constraint firstItem="ZyO-ws-Qhh" firstAttribute="top" secondItem="fVe-mR-gF4" secondAttribute="bottom" id="mKd-St-pfV"/>
+                            <constraint firstItem="vAX-XU-XDz" firstAttribute="top" secondItem="SGd-QE-LX6" secondAttribute="bottom" id="n81-k7-cKf"/>
+                            <constraint firstItem="1KK-Qj-vse" firstAttribute="top" secondItem="5UT-mc-egN" secondAttribute="bottom" id="s7D-t9-jLw"/>
+                            <constraint firstItem="5UT-mc-egN" firstAttribute="top" secondItem="vAX-XU-XDz" secondAttribute="bottom" id="sP5-Ou-gje"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="vSq-1i-Aq9"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="fVe-mR-gF4" id="S6L-F4-FZS"/>
+                        <outlet property="lineOverTabbar" destination="5UT-mc-egN" id="B65-TD-nQF"/>
+                        <outlet property="lineTopBarHeightConstraint" destination="3bv-2q-6XG" id="tYk-Qy-zxN"/>
+                        <outlet property="mainContainerView" destination="vAX-XU-XDz" id="dQy-u1-DiO"/>
+                        <outlet property="rootView" destination="dZP-yb-lqA" id="ZGi-Oe-yKv"/>
+                        <outlet property="tabBar" destination="1KK-Qj-vse" id="5Tb-ph-wg0"/>
+                        <outlet property="tabbarHeightConstraint" destination="L5R-6q-dpf" id="PFC-xa-p3s"/>
+                        <outlet property="titleBarItem" destination="vSq-1i-Aq9" id="3cm-0N-wag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HDf-g4-I08" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221" y="-596"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
