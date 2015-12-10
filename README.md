@@ -3,7 +3,7 @@
 
 ### Mac側
 
-- App StoreアプリでXcode7を検索してインストール
+- App StoreでXcode7を検索してインストール
 - [**ForestUpdater.zip**](https://github.com/f-tools/forest/releases/download/test_release/ForestUpdater.zip)を実行し、更新チェック->ダウンロード->Xcodeでプロジェクトを開くボタンを押す
 - iOSデバイスをMacにつなぐ
 - Xcode左上部でデバイスを選択(「iOS Device」等)
