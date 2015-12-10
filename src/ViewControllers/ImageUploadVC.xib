@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageUploadVC">
+            <connections>
+                <outlet property="containerView" destination="XRo-Yu-eW7" id="kUV-Qm-IZA"/>
+                <outlet property="deleteButton" destination="ego-Za-D8s" id="xGY-JT-plT"/>
+                <outlet property="insertButton" destination="4mT-WI-g36" id="oHT-FY-WLA"/>
+                <outlet property="selectImageButton" destination="ZnR-y4-9sb" id="2o0-oF-4LX"/>
+                <outlet property="tableView" destination="96H-6v-wfF" id="Ipe-HE-Vyc"/>
+                <outlet property="toolbar" destination="YWz-mO-dtn" id="T6P-zC-Gjf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XRo-Yu-eW7">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="96H-6v-wfF">
+                            <rect key="frame" x="0.0" y="50" width="320" height="386"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnR-y4-9sb">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fi3-aD-EV2"/>
+                            </constraints>
+                            <state key="normal" title="＋ ライブラリから選択してアップロード">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectImageACtion:" destination="-1" eventType="touchUpInside" id="1Sa-RT-OQl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ZnR-y4-9sb" firstAttribute="leading" secondItem="XRo-Yu-eW7" secondAttribute="leading" id="70R-x7-xGt"/>
+                        <constraint firstAttribute="trailing" secondItem="ZnR-y4-9sb" secondAttribute="trailing" id="7aZ-Zj-0Pq"/>
+                        <constraint firstAttribute="bottom" secondItem="96H-6v-wfF" secondAttribute="bottom" id="FVw-j3-qmX"/>
+                        <constraint firstItem="96H-6v-wfF" firstAttribute="leading" secondItem="XRo-Yu-eW7" secondAttribute="leading" id="K4z-6v-TAV"/>
+                        <constraint firstItem="96H-6v-wfF" firstAttribute="top" secondItem="ZnR-y4-9sb" secondAttribute="bottom" id="OOF-34-1kz"/>
+                        <constraint firstAttribute="trailing" secondItem="96H-6v-wfF" secondAttribute="trailing" id="jl8-69-dOa"/>
+                        <constraint firstItem="ZnR-y4-9sb" firstAttribute="top" secondItem="XRo-Yu-eW7" secondAttribute="top" id="qzQ-Hn-aKC"/>
+                    </constraints>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWz-mO-dtn">
+                    <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="YSr-5Q-so1"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="本文へ挿入" id="4mT-WI-g36"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ilF-zB-hcn"/>
+                        <barButtonItem title="画像削除" id="ego-Za-D8s"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XRo-Yu-eW7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Lz-DV-ppx"/>
+                <constraint firstAttribute="trailing" secondItem="XRo-Yu-eW7" secondAttribute="trailing" id="8je-8c-7NK"/>
+                <constraint firstItem="YWz-mO-dtn" firstAttribute="top" secondItem="XRo-Yu-eW7" secondAttribute="bottom" id="H4Y-ne-gdq"/>
+                <constraint firstAttribute="trailing" secondItem="YWz-mO-dtn" secondAttribute="trailing" id="R6T-Df-TEs"/>
+                <constraint firstItem="XRo-Yu-eW7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kIy-2D-XK7"/>
+                <constraint firstAttribute="bottom" secondItem="YWz-mO-dtn" secondAttribute="bottom" id="mSM-VL-Ngn"/>
+                <constraint firstItem="YWz-mO-dtn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u12-ZK-zGI"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,8 @@
+BasedOnStyle: LLVM
+UseTab: Never
+IndentWidth: 4
+AllowShortIfStatementsOnASingleLine: true
+BreakBeforeBraces: Linux
+IndentCaseLabels: false
+ColumnLimit: 0
+ObjCSpaceAfterProperty: true

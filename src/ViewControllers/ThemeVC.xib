@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThemeVC">
+            <connections>
+                <outlet property="downloadTabBarItem" destination="E1O-BW-QTq" id="Cky-S4-dxs"/>
+                <outlet property="localTabBarItem" destination="0eO-XU-hJ1" id="tuQ-Ut-dw4"/>
+                <outlet property="tabBar" destination="oiM-br-t3l" id="xRc-wr-t4K"/>
+                <outlet property="tabBorder" destination="YCy-Qa-Js4" id="1tG-TE-O41"/>
+                <outlet property="tableView" destination="GKy-QH-FVp" id="x8G-Cq-0F7"/>
+                <outlet property="tableViewContainer" destination="er8-RW-uxb" id="Hza-LU-bHm"/>
+                <outlet property="uploadTabBarItem" destination="U2g-Eb-v9z" id="wGU-cB-CiW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="er8-RW-uxb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GKy-QH-FVp">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="GKy-QH-FVp" firstAttribute="top" secondItem="er8-RW-uxb" secondAttribute="top" id="2HQ-KH-a6Y"/>
+                        <constraint firstItem="GKy-QH-FVp" firstAttribute="leading" secondItem="er8-RW-uxb" secondAttribute="leading" id="Qit-cy-c3G"/>
+                        <constraint firstAttribute="trailing" secondItem="GKy-QH-FVp" secondAttribute="trailing" id="k3z-FR-iZ4"/>
+                        <constraint firstAttribute="bottom" secondItem="GKy-QH-FVp" secondAttribute="bottom" id="lNC-9H-9WG"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCy-Qa-Js4">
+                    <rect key="frame" x="1" y="519" width="318" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Vpc-cx-kqD"/>
+                    </constraints>
+                </view>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiM-br-t3l">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="KxC-At-D4K"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem title="利用可能" image="home2_30.png" id="0eO-XU-hJ1"/>
+                        <tabBarItem title="ダウンロード" image="arrowdown.png" id="E1O-BW-QTq"/>
+                        <tabBarItem enabled="NO" title="アップロード済み" image="arrowup.png" id="U2g-Eb-v9z"/>
+                    </items>
+                </tabBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="er8-RW-uxb" secondAttribute="trailing" id="17P-ak-od9"/>
+                <constraint firstItem="er8-RW-uxb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6GM-ge-nyr"/>
+                <constraint firstItem="oiM-br-t3l" firstAttribute="top" secondItem="YCy-Qa-Js4" secondAttribute="bottom" id="8vU-ro-3ZD"/>
+                <constraint firstItem="oiM-br-t3l" firstAttribute="top" secondItem="er8-RW-uxb" secondAttribute="bottom" id="BeL-xx-Ac7"/>
+                <constraint firstItem="er8-RW-uxb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FNQ-88-Bea"/>
+                <constraint firstAttribute="bottom" secondItem="oiM-br-t3l" secondAttribute="bottom" id="M7K-B5-AJh"/>
+                <constraint firstAttribute="trailing" secondItem="YCy-Qa-Js4" secondAttribute="trailing" constant="1" id="Mfy-Ix-AbI"/>
+                <constraint firstItem="YCy-Qa-Js4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="1" id="cYg-Hs-S6R"/>
+                <constraint firstAttribute="trailing" secondItem="oiM-br-t3l" secondAttribute="trailing" id="hyz-wE-8vO"/>
+                <constraint firstItem="oiM-br-t3l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oNI-Cl-dh5"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowdown.png" width="50" height="50"/>
+        <image name="arrowup.png" width="50" height="50"/>
+        <image name="home2_30.png" width="30" height="30"/>
+    </resources>
+</document>
