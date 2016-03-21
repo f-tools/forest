@@ -4,9 +4,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 #import "DynamicBaseVC.h"
 
-@interface SearchWebViewController : DynamicBaseVC <UIWebViewDelegate>
+@interface SearchWebViewController : DynamicBaseVC <WKNavigationDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *border;
 @property (weak, nonatomic) IBOutlet UIView *webViewContainer;

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E38632E0CE645039CF4A395 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D018F0F83D4FB6BD6DC807 /* libPods.a */; };
+		AA010C5B1CA00620002489DC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA010C5A1CA00620002489DC /* WebKit.framework */; };
 		AA05CA5C18E7F6950063557B /* FavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA05CA5A18E7F6950063557B /* FavVC.m */; };
 		AA05CA5D18E7F6950063557B /* FavVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA05CA5B18E7F6950063557B /* FavVC.xib */; };
 		AA081D4B18C700BD00D27802 /* Th.m in Sources */ = {isa = PBXBuildFile; fileRef = AA081D4218C700BD00D27802 /* Th.m */; };
@@ -271,6 +272,7 @@
 		0E1303801C9C597708741B34 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7265531D6709649999752391 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A5D018F0F83D4FB6BD6DC807 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA010C5A1CA00620002489DC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AA05CA5918E7F6950063557B /* FavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavVC.h; sourceTree = "<group>"; };
 		AA05CA5A18E7F6950063557B /* FavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = FavVC.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		AA05CA5B18E7F6950063557B /* FavVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavVC.xib; sourceTree = "<group>"; };
@@ -674,6 +676,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA010C5B1CA00620002489DC /* WebKit.framework in Frameworks */,
 				CCF532AE1A444828007EC191 /* MediaPlayer.framework in Frameworks */,
 				CC9A22B61A4241F50059194A /* AssetsLibrary.framework in Frameworks */,
 				CC7812421A30EF69003019B4 /* libsqlite3.0.dylib in Frameworks */,
@@ -875,6 +878,7 @@
 		AA51886A18B51F0300AABC2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA010C5A1CA00620002489DC /* WebKit.framework */,
 				CCF532AD1A444828007EC191 /* MediaPlayer.framework */,
 				CC9A22B51A4241F50059194A /* AssetsLibrary.framework */,
 				CC7812411A30EF69003019B4 /* libsqlite3.0.dylib */,

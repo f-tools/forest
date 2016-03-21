@@ -22,7 +22,6 @@
 
 
 @property (nonatomic) ActionButtonInfo *deleteTextInfo;
-@property (nonatomic) ActionButtonInfo *imageUploadConf;
 @property (nonatomic) ActionButtonInfo *imgurButtonInfo;
 
 @property (nonatomic) UISegmentedControl *themeSegmentedControl;
@@ -46,15 +45,12 @@
 {
     if (self.deleteTextInfo == nil) {
         self.deleteTextInfo = [[ActionButtonInfo alloc] initWithTitle:@"本文消去" withImageName:@"delete_30.png"];
-        self.imageUploadConf = [[ActionButtonInfo alloc] initWithTitle:@"画像アップロード"
-                                                         withImageName:@"arrowup.png"];
-        ;
         self.imgurButtonInfo = [[ActionButtonInfo alloc] initWithTitle:@"Imgur"
                                                          withImageName:@"arrowup.png"];
         ;
     }
 
-    return @[self.imgurButtonInfo, self.deleteTextInfo, self.imageUploadConf];
+    return @[self.imgurButtonInfo, self.deleteTextInfo];
 }
 
 - (void)onButtonTap:(ActionButtonInfo *)info
@@ -73,14 +69,6 @@
                                              }];
         });
 
-    } else if (info == self.imageUploadConf) {
-        [self.navigationController closeActionMenu:nil
-                                           complete:^{
-                                             ImageUploadVC *picker = [[ImageUploadVC alloc] init];
-                                             picker.onAddedText = self.onAddedText;
-                                             UINavigationController *navi = [picker wrapWithNavigationController];
-                                             [self.navigationController presentViewController:navi animated:YES completion:nil];
-                                           }];
     } else if (info == self.imgurButtonInfo) {
         [self.navigationController closeActionMenu:nil
                                            complete:^{
@@ -89,9 +77,9 @@
                                                SearchWebViewController *searchWebViewController = [[SearchWebViewController alloc] init];
                                                searchWebViewController.searchUrl = url;
                                                
-                                               UINavigationController *con = [searchWebViewController wrapWithNavigationController];
+                                               //UINavigationController *con = [searchWebViewController wrapWithNavigationController];
                                                
-                                               [self.navigationController presentViewController:con animated:YES completion:nil];
+                                               [self.navigationController presentViewController:searchWebViewController animated:YES completion:nil];
                    
                                            }];
     }
